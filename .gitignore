@@ -1,0 +1,14 @@
+# Python
+__pycache__
+
+# VS Code
+.vscode
+
+# Script for exporting environment variable
+env.sh
+
+# virtual environment
+venv
+
+# output
+*.geojson
