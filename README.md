@@ -39,6 +39,10 @@ python main.py 35.12345 138.12345 test.geojson
 
 また、その他の（あまり変更する機会のなさそうな）条件は`navitime.py`で指定している。各項目の意味は公式ドキュメントを参照のこと。
 
+## 利用例
+所要時間で色分けし、路線図とともにWebマップ上に可視化
+https://github.com/sw1227/tokyo-moving
+
 ## 参考
 - [到達圏探索（トータルナビ） - NAVITIME API 2.0 仕様書](https://api-sdk.navitime.co.jp/api/specs/api_guide/reachable_transit.html)
 )
