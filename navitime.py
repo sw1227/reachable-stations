@@ -17,7 +17,7 @@ class NavitimeClient():
         """
         params = {
             "offset": "0",
-            "limit": 2000, # 2000: Maximum value
+            "limit": 2000,  # 2000: Maximum value
             "transit_limit": transit_limit,
             "coord_unit": "degree",
             "datum": "wgs84",
@@ -25,7 +25,8 @@ class NavitimeClient():
             "start": f"{lat},{lon}",
             "term": term_max,
             "term_from": term_min,
-            "node_type": "station"
+            "node_type": "station",
+            "options": "node_detail"
         }
         resp = requests.get(self.url, headers=self.headers, params=params)
         assert resp.ok, "Error: Response not OK!"

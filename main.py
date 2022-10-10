@@ -54,8 +54,9 @@ if __name__ == "__main__":
         lon=target_point["lon"],
         term_min=0,
         term_max=60,
-        transit_limit=1
+        transit_limit=3
     )
+    print(f"{result['count']} stations found!")
 
     # Convert and save as GeoJSON
     geojson = response_to_geojson(result)
