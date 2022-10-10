@@ -5,15 +5,15 @@
 指定地点からの到達可能駅の列挙にはNAVITIME Reachable APIを利用している。
 
 ## 使い方
-### (1) Rakuten Rapid APIの登録
-NAVITIME Reachable APIをRakuten Rapid API経由で利用することを想定しているため、[NAVITIME Reachable - Rakuten Rapid API](https://api.rakuten.net/navitimejapan-navitimejapan/api/navitime-reachable)でアカウントを作成する。
+### (1) RapidAPIの登録
+NAVITIME Reachable APIをRapidAPI経由で利用することを想定しているため、[NAVITIME Reachable API - RapidAPI](https://rapidapi.com/navitimejapan-navitimejapan/api/navitime-reachable)でアカウントを作成する。
 
 ブラウザのコンソール上でテストを行うことも可能だが、今回はヘッダの`x-rapidapi-key`で指定するAPIキーのみを利用し、レポジトリ内の`navitime.py`からリクエストを行う。
 
 ※ 一定以下のリクエスト数なら無料のBasicプランで利用可能。
 
 ### (2) 環境変数の設定
-Rakuten Rapid APIへの登録で得られたAPIキーを環境変数 `RAPIDAPI_KEY` にセットする。
+RapidAPIへの登録で得られたAPIキーを環境変数 `RAPIDAPI_KEY` にセットする。
 
 ```bash
 export RAPIDAPI_KEY="YOUR_API_KEY"
@@ -41,9 +41,11 @@ python main.py 35.12345 138.12345 test.geojson
 
 ## 利用例
 所要時間で色分けし、路線図とともにWebマップ上に可視化
-https://github.com/sw1227/tokyo-moving
+
+- https://github.com/sw1227/vue-reachability
+- https://github.com/sw1227/tokyo-moving
 
 ## 参考
 - [到達圏探索（トータルナビ） - NAVITIME API 2.0 仕様書](https://api-sdk.navitime.co.jp/api/specs/api_guide/reachable_transit.html)
-)
-- [NAVITIME Reachable - Rakuten Rapid API](https://api.rakuten.net/navitimejapan-navitimejapan/api/navitime-reachable)
+- [NAVITIME Reachable API - RapidAPI](https://rapidapi.com/navitimejapan-navitimejapan/api/navitime-reachable)
+
